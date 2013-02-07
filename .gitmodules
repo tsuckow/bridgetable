@@ -1,0 +1,3 @@
+[submodule "libs/cards"]
+	path = libs/cards
+	url = git://github.com/selfthinker/CSS-Playing-Cards.git

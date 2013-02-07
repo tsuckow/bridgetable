@@ -1,0 +1,289 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bridge</title>
+
+    <link rel="stylesheet" type="text/css" href="libs/cards/cards.css" media="screen" />
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="libs/cards/cards-ie.css" media="screen" />
+    <![endif]-->
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="libs/cards/cards-ie9.css" media="screen" />
+    <![endif]-->
+
+		<style type="text/css">
+			article, aside, canvas, details,
+			figcaption, figure, footer, header,
+			hgroup, nav, section, summary, video
+			{
+				display: block;
+			}
+
+			html
+			{
+				height: 100%;
+			}
+			
+			body
+			{
+				background: #000000;
+				margin:0px;
+				overflow: auto;
+				font-family: arial,sans-serif;
+				height: 100%;
+			}
+			
+			#topbar
+			{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				height: 60px;
+				width: 100%;
+        background: #333;
+			}
+		
+			#logo
+			{
+				width: 174px;
+				height: 40px;
+				margin: 10px;
+				display: inline-block;
+			}
+		
+			#world
+			{
+				-webkit-perspective: 500; -webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%;
+				height:100%;
+			}
+			
+      #table
+			{
+				-webkit-transform: rotateX(50deg);
+				background: #141;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.widget-bottom
+			{
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+			}
+			
+			.widget-right > div
+			{
+				height: 100%;
+			}
+			
+			.widget-bottom > div
+			{
+				width: 100%;
+			}
+
+    </style>
+  </head>
+  <body>
+    <div id="topbar">
+      <div id=logo></div>
+    </div>
+
+    <div id="world">
+      <div id="table">
+        Table
+		<div class="playingCards">
+        <ul class="hand">
+          <li>
+            <div class="card rank-a spades">
+              <span class="rank">A</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-7 spades">
+              <span class="rank">7</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li>
+            <div class="card rank-8 spades">
+              <span class="rank">8</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-k spades">
+              <span class="rank">K</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+	  <div class="playingCards">
+        <ul class="hand">
+          <li>
+            <div class="card rank-a spades">
+              <span class="rank">A</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-7 spades">
+              <span class="rank">7</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li>
+            <div class="card rank-8 spades">
+              <span class="rank">8</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-k spades">
+              <span class="rank">K</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+	  <div class="playingCards">
+        <ul class="hand">
+          <li>
+            <div class="card rank-a spades">
+              <span class="rank">A</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-7 spades">
+              <span class="rank">7</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li>
+            <div class="card rank-8 spades">
+              <span class="rank">8</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-k spades">
+              <span class="rank">K</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+	  <div class="playingCards">
+        <ul class="hand">
+          <li>
+            <div class="card rank-a spades">
+              <span class="rank">A</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-7 spades">
+              <span class="rank">7</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li>
+            <div class="card rank-8 spades">
+              <span class="rank">8</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-k spades">
+              <span class="rank">K</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="widget widget-bottom">
+      <div class="playingCards rotateHand">
+        <ul class="hand">
+          <li>
+            <div class="card rank-a spades">
+              <span class="rank">A</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-7 spades">
+              <span class="rank">7</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li>
+            <div class="card rank-8 spades">
+              <span class="rank">8</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li>
+            <div class="card rank-k spades">
+              <span class="rank">K</span>
+              <span class="suit">&spades;</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- vim: set ts=2 sw=2 : -->
